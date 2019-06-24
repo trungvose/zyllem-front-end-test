@@ -7,7 +7,15 @@ export abstract class Article {
     type: ArticleType;
 }
 
+export class NormalArticle extends Article {
+    description: string;
+}
+
+export class FeaturedArticle extends  Article{
+    featureImgUrl: string;
+}
+
 export enum ArticleType {
-    NORMAL = 1,
-    FEATURED = 2,
+    NORMAL = "NORMAL",
+    FEATURED = "FEATURED",
 }
