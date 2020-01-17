@@ -7,7 +7,7 @@ import { delay } from "rxjs/operators";
 export class ZyllemApiService {
 
     getArticles(): Observable<Article[]> {
-        const articles = [
+        const articles: any[] = [
             {
                 id: "1",
                 url: "https://www.zyllem.com/single-post/2019/01/05/Feature-Highlight-Zyllem-Planning-Module",
